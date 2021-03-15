@@ -51,7 +51,7 @@
     <animate attributeName="r" to="10" dur="5s" repeatCount="indefinite"/>
   </circle>
 <!--米奇軌道框線-->
-  <path d="M410 320,A128 128, 0, 0, 0, 380 224,A91 91, 0, 1, 0, 335 180,A128 128, 0, 0, 0, 170 180,A91 91, 0, 1, 0,128 220,A128 128, 0, 0, 0, 100 320,A128 119, 0, 0, 0, 410 320z"stroke-width="10" stroke="red" fill="none" opacity="0.3"/>
+  <path d="M410 320,A128 128, 0, 0, 0, 380 224,A91 91, 0, 1, 0, 335 180,A128 128, 0, 0, 0, 170 180,A91 91, 0, 1, 0,128 220,A128 128, 0, 0, 0, 100 320,A128 119, 0, 0, 0, 410 320z" stroke-width="10" stroke="red" fill="none" opacity="0.3"/>
 <!--軌道車-->
   <circle cx="0" cy="0" r="1" stroke="blue" fill="none">
     <animateMotion dur="5s" path="M410 320,A128 128, 0, 0, 0, 380 224,A91 91, 0, 1, 0, 335 180,A128 128, 0, 0, 0, 170 180,A91 91, 0, 1, 0,128 220,A128 128, 0, 0, 0, 100 320,A128 119, 0, 0, 0, 410 320z" repeatCount="indefinite" rotate="auto"/>
