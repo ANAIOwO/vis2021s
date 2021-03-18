@@ -5,11 +5,11 @@
 
   <image href="https://s0.gifyu.com/images/hello_kitty_Hello_Kitty_Head_ClipArt_in_PNG_File.png" height="512" width="512" />
 
-
-  <circle cx="128" cy="128" r="10" stroke="red" fill="none"  />
-
+<!--底圖遮罩-->
   <rect width="512" height="512" stroke="red" fill="rgba(255,255,255,0.95)" opacity="0.95" ></rect>
 
+<!--格線座標-->
+<!--網格橫線-->
   <text x="2" y="12" font-size="12" text-anchor="start" fill="red">0</text>
   <path d="M256  64 H0 H512" stroke="lightgray" fill="white"></path>
   <text x="2" y="68" font-size="12" text-anchor="start" fill="red">64</text>
@@ -26,7 +26,7 @@
   <path d="M256 448 H0 H512" stroke="lightgray" fill="white"></path>
   <text x="2" y="452" font-size="12" text-anchor="start" fill="red">448</text>
   <text x="2" y="510" font-size="12" text-anchor="start" fill="red">512</text>
-
+<!--網格直線-->
   <path d="M64  0 V512" stroke="lightgray" fill="white"></path>
   <text x="58" y="12" font-size="12" text-anchor="start" fill="red">64</text>
   <path d="M128  0 V512" stroke="lightgray" fill="white"></path>
@@ -43,9 +43,33 @@
   <text x="438" y="12" font-size="12" text-anchor="start" fill="red">448</text>
   <text x="492" y="12" font-size="12" text-anchor="start" fill="red">512</text>
 
+<!--中間座標-->
   <path d="M256 256 V270 V242 M256 256 H270 H242" stroke="black" fill="white"></path>
-  
   <text x="254" y="250" font-size="16" text-anchor="middle" fill="red">(256, 256)</text>
-</svg>
 
+<!--kitty臉橢圓底圖-->
+  <ellipse fill="#77DD47" stroke="#246614" stroke-width="5" cx="256" cy="270" rx="200" ry="150" opacity="0.2"/>
+
+
+<!--軌道路徑-->  
+<path d="M456 256 A200 140, 0, 0, 0, 442 215 A6 9,5, 1, 0, 430 155 A150 60,114 0,0, 345 125 A150 60,114 0,0, 260 120 A200 140, 0, 0, 0, 170 128 A25 25, 0, 0, 0, 90 192 A200 140, 0, 0, 0, 56 256 A200 175, 0, 0, 0, 456 256z" stroke-width="10" stroke="#F00" fill="none" opacity="0.3"/>
+
+
+<!--起點-->
+  <circle id="c1" cx="456" cy="256" r="1" stroke="red" fill="none">
+    <animate attributeName="r" to="10" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+<!--終點
+  <circle id="c2" cx="56" cy="256" r="1" stroke="red" fill="none">
+    <animate attributeName="r" to="10" dur="2s" repeatCount="indefinite"/>
+  </circle>
+-->
+
+<!--PUI軌道車車-->
+  <circle cx="0" cy="0" r="1" stroke="blue" fill="none">
+    <animateMotion dur="3s" path="M456 256 A200 140, 0, 0, 0, 442 215 A6 9,5, 1, 0, 430 155 A150 60,114 0,0, 345 125 A150 60,114 0,0, 260 120 A200 140, 0, 0, 0, 170 128 A25 25, 0, 0, 0, 90 192 A200 140, 0, 0, 0, 56 256 A200 175, 0, 0, 0, 456 256z" repeatCount="indefinite" rotate="auto"/>
+    <animate attributeName="r" to="15" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
     
